@@ -1,14 +1,14 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: blog
+  name: raj-blog
 spec:
   replicas: 1
   template:
     spec:
       containers:
       - env:
-        image: rhan888/blog:latest
+        image: raj9240/blog:latest
         imagePullPolicy: Always
         name: blog
         ports:
