@@ -2,10 +2,11 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: raj-blog
-labels:
-     app: raj-blog
+
 spec:
   replicas: 1
+  labels:
+     app: raj-blog
   template:
     spec:
       containers:
